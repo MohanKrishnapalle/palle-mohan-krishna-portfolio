@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#0b151c"/>
+
+  <!-- Python-style upper shape -->
+  <path
+    d="M60 20
+       C45 20 35 27 35 40
+       V49
+       H60
+       V55
+       H32
+       C24 55 20 49 20 41
+       C20 27 32 20 48 20
+       Z"
+    fill="none"
+    stroke="#00eaff"
+    stroke-width="5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Python-style lower shape -->
+  <path
+    d="M60 100
+       C75 100 85 93 85 80
+       V71
+       H60
+       V65
+       H88
+       C96 65 100 71 100 79
+       C100 93 88 100 72 100
+       Z"
+    fill="none"
+    stroke="#00eaff"
+    stroke-width="5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Data nodes -->
+  <circle cx="47" cy="37" r="3.5" fill="#ffffff"/>
+  <circle cx="73" cy="83" r="3.5" fill="#ffffff"/>
+
+  <!-- Data connection -->
+  <path
+    d="M47 37 L73 83"
+    stroke="#00eaff"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <!-- Data points -->
+  <circle cx="38" cy="72" r="3" fill="#00eaff"/>
+  <circle cx="82" cy="48" r="3" fill="#00eaff"/>
+</svg>  

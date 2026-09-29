@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#0b151c"/>
+
+  <path
+    d="M28 48
+       C28 32 40 22 56 22
+       C70 22 80 30 84 42
+       C94 43 101 51 101 61
+       C101 74 91 84 78 84
+       H43
+       C28 84 19 75 19 63
+       C19 55 23 50 28 48Z"
+    fill="none"
+    stroke="#00eaff"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <text
+    x="60"
+    y="68"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+    fill="#ffffff"
+  >
+    AWS
+  </text>
+
+  <path
+    d="M38 91 C52 98 70 98 84 91"
+    fill="none"
+    stroke="#00eaff"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+</svg>

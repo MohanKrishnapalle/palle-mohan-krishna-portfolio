@@ -13,7 +13,10 @@ function Certifications() {
           <div className="certification-card" key={index}>
             
             <div className="certification-icon">
-              ☁️
+              <img
+    src={certification.icon}
+    alt={`${certification.title} icon`}
+  />
             </div>
 
             <div className="certification-content">
@@ -34,13 +37,25 @@ function Certifications() {
               <div className="certification-bottom">
                 <span>{certification.year}</span>
 
-                <a
-                  href={certification.credential}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Certificate →
-                </a>
+                <div className="certification-links">
+                  {certification.project && (
+                    <a
+                      href={certification.project}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Related Project →
+                    </a>
+                  )}
+
+                  <a
+                    href={certification.credential}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate →
+                  </a>
+                </div>
               </div>
             </div>
 
