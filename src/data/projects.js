@@ -41,7 +41,7 @@ const projects = [
       "Manhole detection",
       "Emergency GPS location sharing"
     ],
-    github: "#",
+    github: "https://github.com/MohanKrishnapalle/Smart-Walking-Stick-ESP32",
     demo: "#"
   },
 
