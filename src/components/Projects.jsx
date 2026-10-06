@@ -1,6 +1,17 @@
+import { useState } from "react";
 import projects from "../data/projects";
 
 function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openImages = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeImages = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section className="projects-section" id="projects">
       <div className="section-heading">
@@ -57,14 +68,25 @@ function Projects() {
                 </a>
               )}
 
-              {/* Live Demo */}
+              {/* View Images */}
+              {project.images && project.images.length > 0 && (
+                <button
+                  type="button"
+                  className="project-button"
+                  onClick={() => openImages(project)}
+                >
+                  View Images
+                </button>
+              )}
+
+              {/* Demo Video */}
               {project.demo && project.demo !== "#" && (
                 <a
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live Demo
+                  Demo Video
                 </a>
               )}
 
@@ -73,6 +95,48 @@ function Projects() {
           </div>
         ))}
       </div>
+
+      {/* IMAGE GALLERY MODAL */}
+      {selectedProject && (
+        <div className="image-modal-overlay" onClick={closeImages}>
+
+          <div
+            className="image-modal"
+            onClick={(event) => event.stopPropagation()}
+          >
+
+            <div className="image-modal-header">
+              <h2>{selectedProject.title}</h2>
+
+              <button
+                type="button"
+                className="image-modal-close"
+                onClick={closeImages}
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="image-gallery">
+              {selectedProject.images.map((image, imageIndex) => (
+                <div
+                  className="gallery-image-container"
+                  key={imageIndex}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="gallery-image"
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+        </div>
+      )}
+
     </section>
   );
 }

@@ -41,8 +41,75 @@ const projects = [
       "Manhole detection",
       "Emergency GPS location sharing"
     ],
-    github: "https://github.com/MohanKrishnapalle/Smart-Walking-Stick-ESP32",
-    demo: "#"
+    github:
+      "https://github.com/MohanKrishnapalle/Smart-Walking-Stick-ESP32",
+
+    images: [
+      {
+        src: "/project-media/smart-walking-stick/stick-front.jpeg",
+        alt: "Smart Walking Stick front view"
+      },
+      {
+        src: "/project-media/smart-walking-stick/stick-back.jpeg",
+        alt: "Smart Walking Stick back view"
+      },
+      {
+        src: "/project-media/smart-walking-stick/stick-left.jpeg",
+        alt: "Smart Walking Stick left side view"
+      },
+      {
+        src: "/project-media/smart-walking-stick/stick-top.jpeg",
+        alt: "Smart Walking Stick top view"
+      },
+      {
+        src: "/project-media/smart-walking-stick/obstacle-front.jpeg",
+        alt: "Front obstacle detection using Smart Walking Stick"
+      },
+      {
+        src: "/project-media/smart-walking-stick/obstacle-left.jpeg",
+        alt: "Left obstacle detection using Smart Walking Stick"
+      },
+      {
+        src: "/project-media/smart-walking-stick/obstacle-right.jpeg",
+        alt: "Right obstacle detection using Smart Walking Stick"
+      },
+      {
+        src: "/project-media/smart-walking-stick/obstacle-both-sides.jpeg",
+        alt: "Obstacle detection on both sides"
+      },
+      {
+        src: "/project-media/smart-walking-stick/water-detection.jpeg",
+        alt: "Water detection using Smart Walking Stick"
+      },
+      {
+        src: "/project-media/smart-walking-stick/hole-detection.jpeg",
+        alt: "Hole detection using Smart Walking Stick"
+      },
+      {
+        src: "/project-media/smart-walking-stick/gps-location.png",
+        alt: "Emergency GPS location output"
+      },
+      {
+        src: "/project-media/smart-walking-stick/serial-front-obstacle.png",
+        alt: "Serial monitor front obstacle detection"
+      },
+      {
+        src: "/project-media/smart-walking-stick/serial-left-obstacle.png",
+        alt: "Serial monitor left obstacle detection"
+      },
+      {
+        src: "/project-media/smart-walking-stick/serial-right-obstacle.png",
+        alt: "Serial monitor right obstacle detection"
+      },
+      {
+        src: "/project-media/smart-walking-stick/serial-water-detection.png",
+        alt: "Serial monitor water detection"
+      },
+      {
+        src: "/project-media/smart-walking-stick/serial-hole-detection.png",
+        alt: "Serial monitor hole detection"
+      }
+    ]
   },
 
   {
@@ -63,8 +130,9 @@ const projects = [
       "Model evaluation",
       "Interactive Streamlit application"
     ],
-    github: "#",
-    demo: "#"
+    github:
+      "https://github.com/MohanKrishnapalle/Flight-Passenger-Satisfaction-Prediction",
+    demo: "/project-media/flight-passenger-demo.mp4"
   },
 
   {
@@ -83,8 +151,9 @@ const projects = [
       "Deep learning classification",
       "Butterfly species prediction"
     ],
-    github: "https://github.com/MohanKrishnapalle/Enchanted-Wings-Marvels-of-Butterfly-Species",
-    demo: "#"
+    github:
+      "https://github.com/MohanKrishnapalle/Enchanted-Wings-Marvels-of-Butterfly-Species",
+    demo: "/project-media/butterfly-demo.mp4"
   },
 
   {
@@ -103,7 +172,20 @@ const projects = [
       "Autonomous navigation",
       "Sensor-based movement control"
     ],
-    github: "https://github.com/MohanKrishnapalle/Obstacle-avoidence-robot",
+    github:
+      "https://github.com/MohanKrishnapalle/Obstacle-avoidence-robot",
+
+    images: [
+      {
+        src: "/project-media/autonomous-obstacle-avoidance/robot-front-view.jpg",
+        alt: "Autonomous Obstacle Avoidance Robot front view"
+      },
+      {
+        src: "/project-media/autonomous-obstacle-avoidance/robot-internal-components.jpg",
+        alt: "Internal components of Autonomous Obstacle Avoidance Robot"
+      }
+    ],
+
     demo: "#"
   },
 
@@ -123,8 +205,9 @@ const projects = [
       "Sensor-based control",
       "Optimized movement"
     ],
-    github: "https://github.com/MohanKrishnapalle/PID-Fastest-Line-Follower-Robot",
-    demo: "#"
+    github:
+      "https://github.com/MohanKrishnapalle/PID-Fastest-Line-Follower-Robot",
+    demo: "/project-media/fastest-line-demo.mp4"
   },
 
   {
@@ -143,9 +226,10 @@ const projects = [
       "Ultrasonic sensing",
       "Left-hand algorithm"
     ],
-    github: "https://github.com/MohanKrishnapalle/MazeSolver-LeftHandRule-Arduino",
+    github:
+      "https://github.com/MohanKrishnapalle/MazeSolver-LeftHandRule-Arduino",
     demo: "#"
   }
 ];
 
-export default projects;    
+export default projects;
